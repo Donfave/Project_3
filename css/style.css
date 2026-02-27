@@ -1,0 +1,459 @@
+/* --GLOBAL RESET-- */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* --COLORS-- */
+  --color-button-primary: #ff7a18;
+  --color-button-secondary: #fff;
+  --color-padding: #ffe1c4;
+  --color-border: #1e88e5;
+  --color-footer: #62412e;
+  --color-arrow: #0081fe;
+
+  /* --TYPOGRAPHY-- */
+  --font-logo: "Island Moments", cursive;
+  --font-display: "Inter", system-ui, sans-serif;
+
+  /* --FONT SIZES-- */
+  --fs-logo: 2.55rem; /* 40.81px */
+  --fs-body: 1rem; /* 16px */
+  --fs-h2: 2rem; /* 32px */
+  --fs-footer-1: 0.875rem; /* 14px */
+  --fs-footer-2: 0.75rem; /* 12px */
+  --fs-body-2: 1.5rem; /* 24px */
+  --fs-order: 3.22rem; /* 51.53px */
+
+  /* --BORDER-RADIUS-- */
+  --radius-sm: 10px;
+
+  /* BORDER */
+  --border-width: 2px;
+  --border-style: solid;
+  --border-padding-2: 18px 196px;
+
+  /* --SPACING-- */
+  --space-xs: ;
+}
+
+/* --BASE STYLES-- */
+html {
+  font-size: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-display);
+  font-size: var(--fs-body);
+  line-height: 24px;
+  max-width: 100vw;
+}
+
+/* --BASE COMPONENT-- */
+.btn {
+  background-color: var(--color-button-primary);
+  border-radius: var(--radius-sm);
+  border: var(--border-);
+  padding: var(--border-padding-2);
+}
+
+.btn-1 {
+  background-color: var(--color-button-secondary);
+  border-radius: var(--radius-sm);
+  border-width: var(--border-width);
+  border-style: var(--border-style);
+  border-color: var(--color-border);
+}
+
+.btn-2 {
+  background-color: var(--color-button-secondary);
+  border-radius: var(--radius-sm);
+  border-width: var(--border-width);
+  border-style: var(--border-style);
+  border-color: var(--color-border);
+  padding: var(--border-padding-2);
+}
+.logo {
+  font-family: var(--font-logo);
+}
+.hero {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sign-in,
+.logo {
+  text-decoration: none;
+  list-style: none;
+  display: block;
+}
+
+.hero-image {
+  display: flex;
+  margin-right: auto;
+  position: relative;
+}
+
+.sign-in {
+  color: var(--color-border);
+}
+
+.btn-1,
+.logo {
+  margin-top: 28px;
+}
+.logo {
+  padding: 10px;
+  white-space: nowrap;
+  color: var(--color-button-primary);
+  font-size: var(--fs-logo);
+  margin-right: 300px;
+}
+
+.btn-1 {
+  margin-right: 100px;
+  max-height: 54px;
+  white-space: nowrap;
+  max-width: 160px;
+  padding: 15px;
+  padding-left: 60px;
+  padding-right: 90px;
+}
+.aside {
+  position: absolute;
+  bottom: 2%;
+  left: 39%;
+  text-wrap: wrap;
+}
+
+.aside_h1 {
+  font-size: var(--fs-h2);
+  margin-bottom: 40px;
+}
+
+.aside_ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 20px;
+}
+
+.aside_icon {
+  margin-right: 600px;
+  text-wrap: nowrap;
+  margin-top: 5px;
+}
+
+.aside_icon_1 {
+  margin-right: 80px;
+  text-wrap: nowrap;
+  margin-top: 5px;
+}
+
+.aisde_img {
+  margin-right: 10px;
+  background-color: var(--color-padding);
+  padding: 10px;
+  border-radius: 13px;
+}
+.aside_p {
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.aside_contain {
+  margin-left: 100px;
+  max-width: 1000px;
+}
+.aside_1 {
+  display: flex;
+  gap: 10px;
+}
+
+.aside_icon_2 {
+  margin-left: -6px;
+  background-color: var(--color-padding);
+  padding: 10px;
+  border-radius: 13px;
+}
+
+.aside__p {
+  margin-top: 10px;
+}
+
+.aside_btn {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-left: 100px;
+}
+
+.btn {
+  margin-top: 40px;
+  margin-right: 10px;
+  width: 100%;
+  max-width: 980px;
+}
+
+.btn-2 {
+  margin-top: 15px;
+  margin-right: 10px;
+  width: 980px;
+}
+
+.aside_footer {
+  display: flex;
+  gap: 28px;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.aside_text,
+.aside_text_1 {
+  font-size: var(--font-body);
+  text-decoration: none;
+  font-weight: bold;
+}
+.aside_text {
+  color: var(--color-button-secondary);
+  display: block;
+}
+.aside_text_1 {
+  color: var(--color-border);
+  display: block;
+}
+
+.aside_footer_text,
+.aside_footer_text_1 {
+  text-decoration: none;
+  color: var(--color-border);
+}
+
+.footer {
+  background-color: var(--color-footer);
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 50px;
+  color: var(--color-button-secondary);
+  line-height: 2;
+  width: 100%;
+}
+.footer_div {
+  background-color: var(--color-footer);
+  width: 100%;
+}
+
+.footer_p {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  padding-left: 210px;
+  color: var(--color-button-secondary);
+}
+
+.footer_logo {
+  font-family: var(--font-logo);
+  color: var(--color-button-primary);
+  font-size: var(--fs-logo);
+  text-wrap: nowrap;
+}
+
+.footer_1 {
+  max-width: 250px;
+  padding-left: 60px;
+}
+
+.footer_2,
+.footer_3,
+.footer_4 {
+  padding-left: 100px;
+}
+.footer_ul,
+.footer_ul_1,
+.footer_li {
+  list-style: none;
+  text-decoration: none;
+  color: var(--color-button-secondary);
+}
+
+.footer_link {
+  text-decoration: none;
+  color: var(--color-button-secondary);
+}
+
+.aside_signup {
+  display: flex;
+}
+
+.aside_signup_form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 300px;
+  margin-left: 400px;
+}
+
+.aside_signup_header {
+  display: flex;
+  flex-direction: column;
+  text-wrap: nowrap;
+  margin-top: 300px;
+  margin-left: 100px;
+}
+
+.aside_signup_h1 {
+  font-family: var(--font-logo);
+  color: var(--color-button-primary);
+  font-size: var(--fs-logo);
+  margin-left: 110px;
+}
+.aside_signup_h2 {
+  margin-top: 10px;
+  margin-left: 110px;
+}
+
+.aside_signup_email,
+.aside_signup_password {
+  padding-right: 265px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  border-radius: var(--radius-sm);
+  border-width: 1px;
+}
+
+.aside_signup_label,
+.aside_signup_label_2 {
+  padding-top: 10px;
+}
+
+.aside_signup_P {
+  margin-left: 50px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.aside_signup_a {
+  text-decoration: none;
+  color: var(--color-border);
+}
+
+.aside_signup_continue {
+  padding-left: 195px;
+  padding-right: 195px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: var(--color-button-primary);
+  border: none;
+  border-radius: var(--radius-sm);
+  color: var(--color-button-secondary);
+}
+
+.aside_signup__P {
+  margin-left: 165px;
+  margin-top: 10px;
+}
+
+.aside_signup_btn,
+.aside_signup_btn_1 {
+  padding-left: 140px;
+  padding-right: 140px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  white-space: nowrap;
+  border-radius: var(--radius-sm);
+  border-width: 1px;
+}
+
+.aside__ {
+  display: flex;
+}
+.aside_signup___p {
+  padding-top: 4px;
+  margin-left: 10px;
+}
+
+.aside_signup_btn_1 {
+  margin-top: 30px;
+  padding-left: 135px;
+  padding-right: 135px;
+}
+
+.aside_signup_foot {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.aside_signup_foot_p {
+  text-decoration: none;
+  color: var(--color-border);
+}
+
+.aside_signup {
+  background-image: url(../images/signup-image.jpg);
+  width: 720px;
+  height: 1024px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.aside_signup_hero {
+  border-width: 260px;
+  border: 260px solid;
+  border-image: linear-gradient(
+      rgba(255, 122, 24, 0.698),
+      rgba(255, 122, 24, 0.698)
+    )
+    1;
+  border-style: solid;
+  border-image-slice: fill 1;
+}
+.aside_h2 {
+  text-wrap: nowrap;
+  margin-bottom: 20px;
+  margin-top: 50px;
+  font-size: 30px;
+  color: #fff;
+}
+
+.aside_h2_p {
+  color: white;
+  margin-top: 30px;
+  font-size: 16px;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.home_hero {
+  background-image: url(../images/home-screen.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+.hs_nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--color-button-secondary);
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.hs_nav ul {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+  flex: 1;
+  justify-content: space-around;
+}
+
+.hs_nav a {
+  text-decoration: none;
+  color: black;
+}
